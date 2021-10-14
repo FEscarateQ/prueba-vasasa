@@ -30,7 +30,7 @@ export const CuentaPalabra = () => {
 
 
     const handleOnInput = (e) => {
-        setinputValue(e.target.value.trim());
+        setinputValue(e.target.value.replace(/[0-9]/g, '').trim());
     }
     
 
